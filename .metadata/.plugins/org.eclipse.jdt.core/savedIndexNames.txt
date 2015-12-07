@@ -1,0 +1,20 @@
+INDEX VERSION 1.127+C:\Users\Shin\Documents\ProgrammingD\.metadata\.plugins\org.eclipse.jdt.core
+2481779715.index
+3722628642.index
+3579609579.index
+3604984177.index
+3440853818.index
+2711436617.index
+860684688.index
+3197517058.index
+302237975.index
+2120960816.index
+2560841462.index
+675929008.index
+760806600.index
+1573268062.index
+2586932968.index
+1207437079.index
+2395383774.index
+299970082.index
+1668510614.index
