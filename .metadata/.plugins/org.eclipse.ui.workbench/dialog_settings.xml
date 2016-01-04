@@ -12,8 +12,11 @@
 		<list key="textArray">
 		</list>
 	</section>
+<<<<<<< Updated upstream
 	<section name="NewWizardAction">
 	</section>
 	<section name="ImportExportAction">
 	</section>
+=======
+>>>>>>> Stashed changes
 </section>

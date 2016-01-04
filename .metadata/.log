@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 !SESSION 2015-12-07 10:47:41.557 -----------------------------------------------
 eclipse.buildId=4.5.1.M20150904-0015
 java.version=1.8.0_60
@@ -13,6 +14,69 @@ org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NoSuchMethod
 	at org.eclipse.swt.SWT.error(SWT.java:4491)
 	at org.eclipse.swt.SWT.error(SWT.java:4406)
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+=======
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-01-04 10:34:15.289
+!MESSAGE Error setting focus to : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl BoardModel.java
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3354)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1056)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1056)
+	at org.eclipse.ui.texteditor.StatusTextEditor.setFocus(StatusTextEditor.java:120)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.setFocus(JavaEditor.java:2395)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.delegateSetFocus(CompatibilityPart.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:258)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.focusGui(PartRenderingEngine.java:775)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.setFocus(ContributedPartRenderer.java:102)
+	at org.eclipse.swt.custom.CTabItem.setFocus(CTabItem.java:332)
+	at org.eclipse.swt.custom.CTabFolder.setFocus(CTabFolder.java:2602)
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:1053)
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:3859)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3146)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1318)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:72)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:85)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1283)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1582)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1533)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1503)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1628)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$23.run(AbstractTextEditor.java:4333)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+>>>>>>> Stashed changes
 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
@@ -36,6 +100,7 @@ org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NoSuchMethod
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+<<<<<<< Updated upstream
 Caused by: java.lang.NoSuchMethodError: org.eclipse.ui.internal.registry.FileEditorMapping.setDefaultEditor(Lorg/eclipse/ui/internal/registry/EditorDescriptor;)V
 	at org.sf.feeling.decompiler.Startup$SetupClassFileAssociationRunnable.run(Startup.java:81)
 	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:162)
@@ -115,3 +180,60 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
 	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
 	... 16 more
+=======
+
+!ENTRY org.eclipse.ui.ide 4 4 2016-01-04 10:34:19.535
+!MESSAGE ワークスペースの保管の問題
+
+!ENTRY org.eclipse.ui.ide 4 1 2016-01-04 10:34:19.536
+!MESSAGE ワークベンチの状態を保管中に問題が発生しました。
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2016-01-04 10:34:19.536
+!MESSAGE ワークスペース・メタデータ 'D:/ProgrammingD/.metadata/.plugins/org.eclipse.core.resources/.root/3.tree' を書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: D:\ProgrammingD\.metadata\.plugins\org.eclipse.core.resources\.root\3.tree (指定されたパスが見つかりません。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1406)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1188)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2270)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$4.run(IDEWorkbenchAdvisor.java:453)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.rse.ui 4 0 2016-01-04 10:34:20.260
+!MESSAGE Error refreshing remote edit project
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:960)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:941)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1593)
+	at org.eclipse.rse.internal.files.ui.resources.SystemRemoteEditManager.refreshRemoteEditProject(SystemRemoteEditManager.java:794)
+	at org.eclipse.rse.internal.files.ui.Activator.stop(Activator.java:182)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:955)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:323)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:144)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
+	at java.lang.Thread.run(Thread.java:745)
+Contains: 'RemoteSystemsTempFiles' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+!SUBENTRY 1 org.eclipse.core.resources 4 271 2016-01-04 10:34:20.262
+!MESSAGE ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2016-01-04 10:34:20.262
+!MESSAGE 'RemoteSystemsTempFiles' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-01-04 10:34:21.069
+!MESSAGE The workspace will exit with unsaved changes in this session.
+>>>>>>> Stashed changes
